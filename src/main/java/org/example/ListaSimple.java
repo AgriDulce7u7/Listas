@@ -111,4 +111,5 @@ public class ListaSimple implements Iterable<Integer>{
     public Iterator<Integer> iterator() {
         return new ListaSimpleIterador(nodoPrimero);
     }
+    //hola
 }
