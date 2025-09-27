@@ -1,4 +1,4 @@
-package Listas.ListaSimple;
+package Listas;
 
 import java.util.Iterator;
 
