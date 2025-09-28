@@ -236,7 +236,7 @@ public class ListaCircularDoble<T extends Comparable<T>> implements Iterable<T> 
     // ITERATOR
     @Override
     public Iterator<T> iterator() {
-        Iterator<T> iterator = new Iterator<>() {
+        return new Iterator<>() {
             private Nodo<T> actual = cabeza;
             private boolean primeraVez = true;
 
@@ -254,7 +254,6 @@ public class ListaCircularDoble<T extends Comparable<T>> implements Iterable<T> 
                 return valor;
             }
         };
-        return iterator;
     }
 }
 
