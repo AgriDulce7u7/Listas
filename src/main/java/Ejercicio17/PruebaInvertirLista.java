@@ -1,6 +1,5 @@
 package Ejercicio17;
 
-// Clase de prueba
 public class PruebaInvertirLista {
     public static void main(String[] args) {
         // Crear una lista de enteros para probar

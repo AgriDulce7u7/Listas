@@ -1,6 +1,5 @@
 package Ejercicio17;
 
-// Clase ListaSimple genérica
 class ListaSimple<T> {
     private Nodo<T> nodoPrimero;
     private int tamano;

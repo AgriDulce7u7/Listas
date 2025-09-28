@@ -1,6 +1,5 @@
 package Ejercicio17;
 
-// Clase Nodo para la lista enlazada genérica
 class Nodo<T> {
     T dato;
     Nodo<T> siguiente;
