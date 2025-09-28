@@ -112,8 +112,8 @@ public class ListaCircularDoble<T extends Comparable<T>> implements Iterable<T> 
         }
     }
 
-    public boolean eliminar(T valor) {
-        if (estaVacia()) return false;
+    public void eliminar(T valor) {
+        if (estaVacia()) return;
 
         Nodo<T> actual = cabeza;
         do {
@@ -127,12 +127,11 @@ public class ListaCircularDoble<T extends Comparable<T>> implements Iterable<T> 
                     sig.setAnterior(ant);
                     size--;
                 }
-                return true;
+                return;
             }
             actual = actual.getSiguiente();
         } while (actual != cabeza);
 
-        return false;
     }
 
     // OBTENER Y MODIFICAR
@@ -237,7 +236,7 @@ public class ListaCircularDoble<T extends Comparable<T>> implements Iterable<T> 
     // ITERATOR
     @Override
     public Iterator<T> iterator() {
-        return new Iterator<T>() {
+        Iterator<T> iterator = new Iterator<>() {
             private Nodo<T> actual = cabeza;
             private boolean primeraVez = true;
 
@@ -255,6 +254,8 @@ public class ListaCircularDoble<T extends Comparable<T>> implements Iterable<T> 
                 return valor;
             }
         };
+        return iterator;
     }
 }
+
 
